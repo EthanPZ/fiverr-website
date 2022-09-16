@@ -19,6 +19,10 @@ p {
   margin: 0;
 }
 
+span {
+  color: green;
+}
+
 header {
   position: absolute;
   font-family: "Bebas Neue";
@@ -169,6 +173,11 @@ header h1 {
   .maindv {
     display: block;
     text-align: center;
+    padding: 10px;
+  }
+
+  .maindv button {
+    width: 80%;
   }
 
   .randomfr {
@@ -194,6 +203,7 @@ header h1 {
 
   .dvprojects {
     display: block;
+    padding: 10px;
   }
 
   .dvthree h1 {
@@ -206,5 +216,36 @@ header h1 {
 
   .dvtwo {
     height: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #292929;
+    color: white;
+  }
+
+  p {
+    color: rgb(157, 157, 157);
+  }
+
+  .randomfr {
+    background: linear-gradient(
+        to left,
+        transparent,
+        80%,
+        rgba(28, 28, 28, 0.669)
+      ),
+      url("./pics/Screenshot\ 2022-09-16\ 133317.png");
+
+    border: 1px solid #151515;
+  }
+
+  span {
+    color: rgb(0, 182, 0);
+  }
+
+  .dvtwo img:hover {
+    opacity: 0.7;
   }
 }
